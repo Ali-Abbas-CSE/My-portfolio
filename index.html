@@ -3,56 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ali The Dev</title>
+    <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="res-style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="main">
+    <header>
       <nav>
-        <div class="nav-bar">
-          <div class="logo">Ali Abbas</div>
-          <div class="ham">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="link">
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Project</a>
-            <a href="">Contact</a>
-          </div>
-          <button id="btn">
-            <a href="https://github.com/Ali-Abbas-CSE" target="_blank">Visit Github</a>
-            
-        </button>
+        <div class="left">Ali's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">project</a></li>
+            <!-- <li><a href="#">Contact me</a></li> -->
+            <i class="fa-solid fa-bars" id="ham"></i>
+          </ul>
         </div>
       </nav>
+      <div class="mob-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">project</a></li>
+        <!-- <li><a href="#">Contact me</a></li> -->
+      </div>
+    </header>
 
-      <section class="front">
-        <div class="pic">
-            <img src="3280f9101cce41298883d101fca58dc1.jpg" alt="" srcset="">
-        </div>
-        <div class="data">
-            <h3>Hi, I'm</h3>
-            <h1>Ali Abbas </h1>
-            <p>Web Developer</p>
-            <div class="btn">
-                <button>Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-                <button>Contact Me</button>
-            </div>
-            <div class="social">
-                <button>
-                    <a href="https://github.com/Ali-Abbas-CSE" target="_blank">
-                    <i class="fa-brands fa-github"></i></a>
-                </button>
+    <section class="first-section" id="home">
+      <div class="left-section">
+        Hi, My name is <span class="purple"> Ali</span>
+        <div>I am</div>
+        <!-- <div>Web Developer</div> -->
+        <span id="element"></span>
+      </div>
 
-                    <button>
-                    <a href="https://www.linkedin.com/feed/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i></a></button>
-            </div>
-            </h1>
+      <div class="right-section">
+        <img src="1736262687074.png" alt="dev pic" />
+      </div>
+    </section>
+    <section id="about">
+      <div class="my-img">
+        <img src="WhatsApp Image 2023-12-27 at 19.03.22_9cd0b0d2.jpg" alt="" />
+      </div>
+      <div class="bio-data">
+        <div class="bio-heading">
+          <h2>Bio data</h2>
         </div>
-      </section>
-    </div>
+        <div class="bio-para">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sit
+            exercitationem in error nesciunt odit, velit facere dolorem, enim
+            laboriosam rem, natus voluptatum praesentium voluptatibus nam.
+            Provident aut voluptates, laudantium, voluptas quod pariatur maiores
+            cum ratione maxime ut repellat at.
+          </p>
+        </div>
+        <button>
+          <a href="Ali_CV.pdf" download
+            >Download CV
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </button>
+      </div>
+    </section>
+
+    <section id="project">
+      <h2>Projects</h2>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="support.png" alt="">
+        </div>
+        <div class="box-desc">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sed adipisci, architecto ipsum quod itaque sint dignissimos consequuntur repellat illo ea porro quas?...</p>
+        </div>
+      </div>
+
+      <div class="box">
+
+        <div class="box-desc">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sed adipisci, architecto ipsum quod itaque sint dignissimos consequuntur repellat illo ea porro quas?...</p>
+        </div>
+        <div class="box-img">
+          <img src="support.png" alt="">
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="box-img">
+          <img src="support.png" alt="">
+        </div>
+        <div class="box-desc">
+          <h2>Project Title</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sed adipisci, architecto ipsum quod itaque sint dignissimos consequuntur repellat illo ea porro quas?...</p>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+   
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>a passionated Web developer.</i>", " a student."],
+        // typeSpeed: 50,
+        // loop: !0,
+        typeSpeed: 80,
+        backSpeed: 75,
+        startDelay: 1000,
+        backDelay: 2000,
+        loop: !0,
+        loopcount: false,
+        showCursor: false,
+      });
+    </script>
   </body>
 </html>
