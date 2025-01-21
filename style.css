@@ -258,3 +258,6 @@ button:hover {
   font-size: 1.3rem;
   font-weight: 500;
 }
+.box-desc >p{
+  color: white;
+}
