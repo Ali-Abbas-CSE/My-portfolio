@@ -18,7 +18,7 @@ nav {
   height: 80px;
   width: 100vw;
   margin: 0;
-  background-color: rgba(52, 221, 240, 0.2);
+  background-color: #34ddf033;
   border-bottom: 2px solid #34ddf0;
 }
 
@@ -183,12 +183,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .my-img >img{
   height: 300px;
   width: 300px;
   margin: 40px;
   border-radius: 50%;
+  
   /* border: 10px solid red; */
 }
 
@@ -250,4 +252,9 @@ button:hover {
 .box-desc >h2{
   padding-left: 10px;
 }
-
+.box-desc >a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
