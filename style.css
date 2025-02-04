@@ -118,7 +118,6 @@ nav ul li a:hover::after {
   color: #ffffff;
   width: 50%;
   height: 360px;
-  /* border: 2px solid white; */
 }
 
 .right-section {
@@ -166,36 +165,57 @@ button:hover {
 
 #about{
   box-sizing: border-box;
-  /* height: 400px;
-  width: 100%; */
-  /* border: 2px solid red; */
   overflow: hidden;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  
+    
 }
 .my-img{
   height: 100%;
+  overflow: hidden;
   width: 100%;
   /* border: 2px dotted  white; */
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  overflow: hidden;
+  position: relative;
+
 }
+
+.rec{
+  height: 100px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  animation: rotate 4s linear infinite;
+  transition: all ease-in-out;
+}
+@keyframes rotate {
+  from{
+   transform: rotate(360deg);
+  }  
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+
+
 .my-img >img{
   height: 300px;
   width: 300px;
-  margin: 40px;
+  margin: 10px;
   border-radius: 50%;
   
-  /* border: 10px solid red; */
 }
 
 .bio-data{
-  /* border: 2px dotted  rgb(255, 0, 0); */
   display: flex;
   justify-content: space-around;
   height: 280px;
@@ -218,9 +238,6 @@ button:hover {
 /* Project Section←👈👈 */
 
 #project{
-  /* height: 100px;
-  width: 100%; */
-  /* border: 1px solid red; */
   padding: 10px;
 }
 #project >h2{
@@ -229,7 +246,6 @@ button:hover {
 }
 
 #project >.box{
-  /* color: red; */
   padding: 8px 10px;
   border-bottom: 1px solid white;
   display: flex;
@@ -260,4 +276,28 @@ button:hover {
 }
 .box-desc >p{
   color: white;
+}
+
+.social_link{
+  padding: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.social_media_link> a>i{
+  font-size: 28px;
+  color: white;
+ padding:  10px;
+ border-radius: 50%;
+ margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.social_media_link >a:hover>i{
+  position: relative;
+  /* transition: all ease-in-out 10s; */
+  top: -10px;
 }
