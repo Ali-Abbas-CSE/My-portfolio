@@ -176,7 +176,7 @@ button:hover {
 .my-img{
   height: 100%;
   overflow: hidden;
-  width: 100%;
+  width: 32%;
   /* border: 2px dotted  white; */
   border-radius: 50%;
   display: flex;
@@ -186,6 +186,8 @@ button:hover {
   position: relative;
 
 }
+
+
 
 .rec{
   height: 100px;
